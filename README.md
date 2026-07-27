@@ -73,3 +73,11 @@ python "3-langchain/Models/2.ChatModels/3_chatmodel_openAI.py"
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+## if got Import "langchain_huggingface" could not be resolved
+Press:
+Ctrl + Shift + P
+
+Search for:
+Python: Select Interpreter

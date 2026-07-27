@@ -28,3 +28,7 @@ python-dotenv
 numpy
 scikit-learn
 torch
+torchvision
+
+# UI Framework
+streamlit
