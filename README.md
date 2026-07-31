@@ -81,3 +81,8 @@ Ctrl + Shift + P
 
 Search for:
 Python: Select Interpreter
+
+
+## using chatmodel openai
+https://www.youtube.com/watch?v=y5EmRr1O1h4&list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0
+https://github.com/campusx-official/langchain-structured-output/blob/main/with_structured_output_json.py
