@@ -1,25 +1,28 @@
-# LangChain Core
+# LangChain Core & Ecosystem
 langchain
 langchain-core
-langchain-groq
 langchain-community
+langchain-chroma
 
-# OpenAI Integration
+# Providers
 langchain-openai
 openai
-
-# Anthropic Integration
 langchain-anthropic
-
-# Google Gemini (PaLM) Integration
 langchain-google-genai
 google-generativeai
-
-# Hugging Face Integration
+langchain-groq
 langchain-huggingface
 transformers
 sentence-transformers
 huggingface-hub
+
+# Vector Stores & Retrieval
+chromadb
+pypdf
+
+# Validation & Schemas
+pydantic
+email-validator
 
 # Environment Variable Management
 python-dotenv
@@ -30,9 +33,6 @@ scikit-learn
 torch
 torchvision
 
-# UI Framework
+# UI Framework & Graph Visualization
 streamlit
 grandalf
-
-# PDF Handling
-pypdf
