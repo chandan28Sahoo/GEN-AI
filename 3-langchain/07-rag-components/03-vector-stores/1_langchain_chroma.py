@@ -1,17 +1,16 @@
 import os
 from pathlib import Path
+# pyrefly: ignore [missing-import]
 from dotenv import load_dotenv
+# pyrefly: ignore [missing-import]
+from langchain_chroma import Chroma
+# pyrefly: ignore [missing-import]
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+# pyrefly: ignore [missing-import]
+from langchain_core.documents import Document
 
 load_dotenv()
 
-# Modern Chroma import with fallback for compatibility
-try:
-    from langchain_chroma import Chroma
-except ImportError:
-    from langchain_community.vectorstores import Chroma
-
-from langchain_openai import OpenAIEmbeddings
-from langchain_core.documents import Document
 
 # 1. Create LangChain documents for IPL players
 doc1 = Document(
@@ -40,7 +39,10 @@ docs = [doc1, doc2, doc3, doc4, doc5]
 # 2. Initialize Chroma Vector Store
 persist_dir = str(Path(__file__).parent / 'my_chroma_db')
 vector_store = Chroma(
-    embedding_function=OpenAIEmbeddings(),
+    embedding_function=GoogleGenerativeAIEmbeddings(
+        model="models/gemini-embedding-001",
+        google_api_key=os.getenv("GOOGLE_AI_API_KEY")
+    ),
     persist_directory=persist_dir,
     collection_name='ipl_players'
 )

@@ -1,0 +1,24 @@
+# Core LangChain
+langchain
+langchain-community
+langchain-openai
+langchain-google-genai
+
+# YouTube Transcript
+youtube-transcript-api
+pytube
+
+# Vector Store
+chromadb
+
+# Embeddings
+sentence-transformers
+
+# UI
+streamlit
+
+# Env management
+python-dotenv
+
+# Utilities
+tiktoken

@@ -16,6 +16,9 @@ transformers
 sentence-transformers
 huggingface-hub
 
+# Tools & Search
+ddgs
+
 # Vector Stores & Retrieval
 chromadb
 pypdf
@@ -36,3 +39,6 @@ torchvision
 # UI Framework & Graph Visualization
 streamlit
 grandalf
+
+#tool
+langchain-experimental
